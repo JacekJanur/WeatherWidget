@@ -21,7 +21,7 @@ function App() {
 
 
 const fetchWeather = async () => {
-      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d1694e8c4784d560a1be93ad1566f17a&units=metric`)
+      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.trim()}&appid=d1694e8c4784d560a1be93ad1566f17a&units=metric`)
       const data = await res.json()
 
       return data
