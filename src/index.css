@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 body {
+  background: linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),
+    url('img/bgImg.jpg');
+
+  background-size: 3000px;
+  background-position: center left;
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +18,106 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ################### */
+/* CONTAINTER */
+/* ################### */
+
+
+.container {
+  color: white;
+  width: 400px;
+  margin: 200px auto;
+  text-align: center;
+}
+
+.header{
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+/* ################### */
+/* CITY INPUT */
+/* ################### */
+
+.city-input button, .city-input input{
+  font-weight: 500;
+  border: 0;
+}
+
+.city-input-form
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.city-input-form > *
+{
+  margin: 5px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.city-input-form input
+{
+  color: white;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.city-input-form button
+{
+  background-color: rgb(167,157,146);
+  cursor: pointer;
+  transition: background-color .15s;
+}
+
+.city-input-form button:hover
+{
+  background-color: rgb(144,132,118);
+}
+
+/* ################### */
+/* WEATHER */
+/* ################### */
+
+.weather-head{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header{
+  text-transform: uppercase;
+}
+
+.header svg{
+  cursor: pointer;
+}
+
+.header svg:hover{
+  color: rgb(200, 200, 200);
+}
+
+.temp-text{
+  text-transform: capitalize;
+}
+
+.temp-big{
+  font-weight: 200;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.weather-down{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.weather-down svg{
+  vertical-align: middle;
 }

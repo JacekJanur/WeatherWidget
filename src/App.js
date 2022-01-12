@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import CityInput from './components/CityInput'
+import Weather from './components/Weather'
+import { useState } from 'react';
 
 function App() {
+
+  const [city, setCity] = useState('')
+  const [citySetted, setCitySetted] = useState(false)
+  const [weather, setWeather] = useState('')
+
+  const onClickCity = async () => {
+    const weatherFromServer = await fetchWeather()
+    if(weatherFromServer.cod === 200){
+      setWeather(weatherFromServer)
+      setCitySetted(true)
+    }
+    else{
+      alert("No city found!")
+    }
+  }
+
+
+const fetchWeather = async () => {
+      const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d1694e8c4784d560a1be93ad1566f17a&units=metric`)
+      const data = await res.json()
+
+      return data
+    }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {citySetted ? <Weather data={weather} setBool={setCitySetted} setVar={setCity}/> : 
+      <CityInput onClickF={onClickCity} setVar={setCity} />}
     </div>
   );
 }
