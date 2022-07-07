@@ -10,10 +10,10 @@ Icons are changing, depending on weather in certain city.
 
 ### Components
 
-#### [Weather]([https://github.com/JacekJanur/PythonJS/blob/main/classes/AbstractGraph.py](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/Weather.js))
-#### [WeatherPanel]([https://github.com/JacekJanur/PythonJS/blob/main/classes/AbstractGraph.py](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/WeatherPanel.js))
-#### [WeatherPanelIcon]([https://github.com/JacekJanur/PythonJS/blob/main/classes/AbstractGraph.py](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/WeatherPanelIcon.js))
-#### [CityInput]([https://github.com/JacekJanur/PythonJS/blob/main/classes/AbstractGraph.py](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/CityInput.js))
-#### [CityInputForm]([https://github.com/JacekJanur/PythonJS/blob/main/classes/AbstractGraph.py](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/CityInputForm.js))
-#### [InputText]([https://github.com/JacekJanur/PythonJS/blob/main/classes/AbstractGraph.py](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/Weather.js))
+#### [Weather](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/Weather.js)
+#### [WeatherPanel](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/WeatherPanel.js)
+#### [WeatherPanelIcon](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/WeatherPanelIcon.js)
+#### [CityInput](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/CityInput.js)
+#### [CityInputForm](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/CityInputForm.js)
+#### [InputText](https://github.com/JacekJanur/WeatherWidget/blob/main/src/components/Weather.js)
 
